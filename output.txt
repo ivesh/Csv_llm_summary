@@ -1,0 +1,4 @@
+Invoice_ID: a unique transaction identifier
+Vendor_Name: the supplier
+Amount: currency value
+Payment_Date: date payment was made
