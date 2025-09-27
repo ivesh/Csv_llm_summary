@@ -63,41 +63,49 @@ This project addresses the task of generating short, descriptive text explanatio
 This project demonstrates practical usage of Hugging Face’s `distilgpt2` model to generate human-readable descriptions for CSV headers in an offline environment. Through prompt engineering and multi-generation selection, it achieves concise and mostly relevant outputs meeting the assignment criteria.
 
 ***
-## Virual environment
+
+
+## Virtual Environment Setup
+Using a virtual environment is recommended to isolate project dependencies and avoid conflicts with system-wide Python packages.
+
 1. Create a Virtual Environment
-Use Python's built-in venv module to create a virtual environment.
+Use Python's built-in venv module to create a new virtual environment in your project directory. Replace myenv with your desired environment name.
 
-Bash
-
-Copy code
+bash
 python -m venv myenv
-Replace myenv with the desired name for your virtual environment.
 2. Activate the Virtual Environment
 On Windows:
 
-Bash
-
-Copy code
+bash
 myenv\Scripts\activate
 On macOS/Linux:
 
-Bash
-
-Copy code
+bash
 source myenv/bin/activate
-Once activated, you'll see the virtual environment's name in your terminal prompt.
+Once activated, your terminal prompt will show the virtual environment name, indicating you are now working in an isolated environment.
 
 3. Install Dependencies
-After activation, you can install packages using pip:
+After activating the virtual environment, install the required packages:
 
-Bash
-
-Copy code
-pip install <package_name>
+bash
+pip install -r requirements.txt
 4. Deactivate the Virtual Environment
-When you're done, deactivate the environment by running:
+To exit the virtual environment, run:
 
-Bash
-
-Copy code
+bash
 deactivate
+How To Use This Project
+Ensure the virtual environment is activated as described above.
+
+Install dependencies using the provided requirements.txt (includes transformers and torch).
+
+Run the Python script:
+
+bash
+python csv_llm_summary.py
+View the output:
+
+The script prints generated header descriptions to the console.
+
+It writes the descriptions to a text file named output.txt in the project directory.
+![alt text](image.png)
